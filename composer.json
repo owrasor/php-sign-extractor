@@ -1,0 +1,29 @@
+{
+    "name": "owrasor/pdf-sign-extractor",
+    "description": "Extract info from signed PDF",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Owrasor\\PdfSignExtractor\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fabio Leal Kretzer",
+            "email": "fabio.l.kretzer@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Owrasor\\PdfSignExtractor\\PdfSignExtractorServiceProvider"
+            ],
+            "aliases": {
+                "Debugbar": "Owrasor\\PdfSignExtractor\\PdfSignExtractorServiceProvider"
+            }
+        }
+    }
+}
